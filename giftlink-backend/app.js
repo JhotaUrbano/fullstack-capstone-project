@@ -32,6 +32,7 @@ app.use(pinoHttp({ logger }));
 
 // Use Routes
 app.use('/api/gifts', giftRoutes);
+app.use('/api/gifts/:id', giftRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/search', searchRoutes);
 
