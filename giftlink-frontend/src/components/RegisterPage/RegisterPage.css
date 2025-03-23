@@ -1,0 +1,100 @@
+/* Estilos generales para la tarjeta de registro */
+.register-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .register-card:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Título */
+  .register-card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  /* Inputs */
+  .register-card .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 15px;
+    transition: border-color 0.2s;
+  }
+  
+  .register-card .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Labels */
+  .register-card .form-label {
+    font-weight: 600;
+    color: #444;
+  }
+  
+  /* Botón */
+  .register-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .register-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Enlace de login */
+  .register-card a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .register-card a:hover {
+    color: #0056b3;
+  }
+  
+  /* Error */
+  .register-card .text-danger {
+    font-size: 14px;
+    margin-top: 6px;
+    color: #dc3545;
+    font-weight: 500;
+  }
+  
+  /* Responsive: centrado vertical */
+  @media (min-height: 600px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  }
+  /* Ancho mínimo y máximo de la tarjeta */
+.register-card {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+  }
+  
+  /* Asegurar que el contenedor centralice correctamente */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  
