@@ -49,6 +49,7 @@ router.post('/register', async (req, res) => {
         logger.info('User registered successfully');
         res.json({ authtoken,email });
     } catch (e) {
+        console.error("❌ Error en registro:", e);
         logger.error(e);
         return res.status(500).send('Internal server error');
     }
@@ -86,6 +87,7 @@ router.post('/login', async (req, res) => {
             return res.status(404).json({ error: 'User not found' });
         }
     } catch (e) {
+        console.error("❌ Error en registro:", e);
         logger.error(e);
         return res.status(500).json({ error: 'Internal server error', details: e.message });
       }
@@ -107,6 +109,7 @@ router.put('/update', async (req, res) => {
         const email = req.headers.email;
 
         if (!email) {
+            console.error("❌ Error en registro:", e);
             logger.error('Email not found in the request headers');
             return res.status(400).json({ error: "Email not found in the request headers" });
         }
@@ -145,6 +148,7 @@ router.put('/update', async (req, res) => {
 
         res.json({ authtoken });
     } catch (error) {
+        console.error("❌ Error en registro:", e);
         logger.error(error);
         return res.status(500).send("Internal Server Error");
     }

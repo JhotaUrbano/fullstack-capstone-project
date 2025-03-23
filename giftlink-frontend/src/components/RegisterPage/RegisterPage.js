@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 //Step 1 - Task 1
-import {urlConfig} from '../../config';
+import { urlConfig } from '../../config';
 
 //Step 1 - Task 2
 import { useAppContext } from '../../context/AuthContext';
@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import './RegisterPage.css';
 
 function RegisterPage() {
+    console.log("API URL:", urlConfig.backendUrl);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');

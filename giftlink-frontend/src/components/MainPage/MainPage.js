@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {urlConfig} from '../../config';
+import './MainPage.css';
+
 
 function MainPage() {
     const [gifts, setGifts] = useState([])
@@ -40,37 +42,35 @@ function MainPage() {
     };
 
     return (
-        <div className="container mt-5">
-            <div className="row">
+        <div className="container">
+            <div className="d-flex flex-wrap justify-content-center gap-4">
                 {gifts.map((gift) => (
-                    <div key={gift.id} className="col-md-4 mb-4">
-                        <div className="card product-card">
-                            <div className="image-placeholder">
-                                {gift.image ? (
-                                    <img src={gift.image} alt={gift.name} />
-                                ) : (
-                                    <div className="no-image-available">No Image Available</div>
-                                )}
-                            </div>
-                            <div className="card-body">
-                                <h5 className="card-title">{gift.name}</h5>
-                                <p className={`card-text ${getConditionClass(gift.condition)}`}>
-                                    {gift.condition}
-                                </p>
-                                <p className="card-text date-added">
-                                    {formatDate(gift.date_added)}
-                                </p>
-                            </div>
-                            <div className="card-footer">
-                                <button onClick={() => goToDetailsPage(gift.id)} className="btn btn-primary w-100">
-                                    View Details
-                                </button>
-                            </div>
-                        </div>
+                <div key={gift.id} className="gift-card">
+                    <div className="image-placeholder">
+                    {gift.image ? (
+                        <img className="gift-image" src={gift.image} alt={gift.name} />
+                    ) : (
+                        <div className="no-image-available">No Image Available</div>
+                    )}
                     </div>
+                    <div className="card-body">
+                    <h5 className="card-title">{gift.name}</h5>
+                    <p className="card-text">{gift.condition}</p>
+                    <p className="card-text">{formatDate(gift.date_added)}</p>
+                    </div>
+                    <div className="card-footer">
+                    <button
+                        onClick={() => goToDetailsPage(gift.id)}
+                        className="btn btn-primary w-100"
+                    >
+                        View Details
+                    </button>
+                    </div>
+                </div>
                 ))}
             </div>
         </div>
+
     );
 }
 export default MainPage;
