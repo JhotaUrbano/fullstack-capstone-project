@@ -22,28 +22,20 @@ Then [the outcome of action is observed]
 
 ---
 
-### 📌 Historia 1 - `nueva`
-
-```md
-**As a** usuario nuevo  
-**I need** registrarme en la plataforma  
-**So that** pueda acceder a las funciones personalizadas
-
-### Details and Assumptions
-* El registro requiere email, nombre y contraseña válidos.
-
-### Acceptance Criteria
-```gherkin
-Given un usuario que accede a la página de registro  
-When completa el formulario correctamente  
-Then se crea su cuenta y es redirigido al panel principal
-
 
 ---
 
-### 📌 Historia 2 - `backlog`
+### ✅ Historia 1
 
 ```md
+---
+name: Cambio de contraseña
+about: Historia para permitir que los usuarios cambien su contraseña
+title: ''
+labels: backlog
+assignees: ''
+---
+
 **As a** usuario registrado  
 **I need** cambiar mi contraseña desde el perfil  
 **So that** pueda mantener mi cuenta segura
@@ -58,11 +50,20 @@ When actualiza su contraseña con una válida
 Then la nueva contraseña se guarda y se confirma el cambio
 
 
+
 ---
 
-### 📌 Historia 3 - `deuda técnica`
+### ✅ Historia 2
 
 ```md
+---
+name: Refactorización del login
+about: Eliminar funciones obsoletas del módulo de login
+title: ''
+labels: deuda técnica
+assignees: ''
+---
+
 **As a** desarrollador  
 **I need** eliminar funciones obsoletas del módulo de login  
 **So that** se reduzca la complejidad del código
@@ -77,11 +78,20 @@ When elimino las funciones no utilizadas
 Then la aplicación sigue funcionando sin errores
 
 
+
 ---
 
-### 📌 Historia 4 - `nevera`
+### ✅ Historia 3
 
 ```md
+---
+name: Panel de métricas
+about: Crear un panel para visualizar métricas del sistema
+title: ''
+labels: nevera
+assignees: ''
+---
+
 **As a** administrador  
 **I need** un panel de métricas del sistema  
 **So that** pueda analizar el rendimiento y uso de recursos
@@ -96,11 +106,20 @@ When selecciono un período de tiempo
 Then veo gráficos actualizados del rendimiento del sistema
 
 
+
 ---
 
-### 📌 Historia 5 - `nueva`
+### ✅ Historia 4
 
 ```md
+---
+name: Notificaciones por correo
+about: Notificar a los usuarios por email de eventos importantes
+title: ''
+labels: nueva
+assignees: ''
+---
+
 **As a** usuario  
 **I need** recibir notificaciones por correo  
 **So that** esté informado sobre actualizaciones importantes
@@ -115,11 +134,48 @@ When ocurre un cambio relevante
 Then el usuario recibe un email notificándolo
 
 
+
 ---
 
-### 📌 Historia 6 - `backlog`
+### ✅ Historia 5
 
 ```md
+---
+name: Notificaciones por correo
+about: Notificar a los usuarios por email de eventos importantes
+title: ''
+labels: nueva
+assignees: ''
+---
+
+**As a** usuario  
+**I need** recibir notificaciones por correo  
+**So that** esté informado sobre actualizaciones importantes
+
+### Details and Assumptions
+* Las notificaciones se enviarán al email registrado en el perfil.
+
+### Acceptance Criteria
+```gherkin
+Given una actualización importante del sistema  
+When ocurre un cambio relevante  
+Then el usuario recibe un email notificándolo
+
+
+
+---
+
+### ✅ Historia 6
+
+```md
+---
+name: Búsqueda de contenido
+about: Añadir funcionalidad de búsqueda en la aplicación
+title: ''
+labels: backlog
+assignees: ''
+---
+
 **As a** usuario  
 **I need** buscar contenido en la aplicación  
 **So that** pueda encontrar rápidamente lo que necesito
@@ -134,11 +190,20 @@ When ingreso un término válido
 Then se muestran los resultados correspondientes
 
 
+
 ---
 
-### 📌 Historia 7 - `deuda técnica`
+### ✅ Historia 7
 
 ```md
+---
+name: Actualización de dependencias
+about: Actualizar las librerías del proyecto
+title: ''
+labels: deuda técnica
+assignees: ''
+---
+
 **As a** desarrollador  
 **I need** actualizar las dependencias del proyecto  
 **So that** podamos mantener la seguridad del sistema
@@ -153,11 +218,20 @@ When ejecuto los tests
 Then todos pasan correctamente y el sistema funciona igual
 
 
+
 ---
 
-### 📌 Historia 8 - `nevera`
+### ✅ Historia 8
 
 ```md
+---
+name: Exportar datos en Excel
+about: Permitir exportar reportes de usuarios en Excel
+title: ''
+labels: nevera
+assignees: ''
+---
+
 **As a** analista  
 **I need** exportar reportes de usuarios en Excel  
 **So that** pueda analizarlos en otras herramientas
@@ -170,7 +244,6 @@ Then todos pasan correctamente y el sistema funciona igual
 Given que estoy en la sección de usuarios  
 When pulso el botón de "Exportar"  
 Then se genera y descarga un archivo Excel con los datos
-
 
 
 
