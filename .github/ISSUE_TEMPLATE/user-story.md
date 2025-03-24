@@ -1,5 +1,59 @@
 ---
-name: User Story
+name: Manolo
+about: This template define user story
+title: ''
+labels: backlog, bug, documentation, duplicate, enhancement, good first issue, help
+  wanted, icebox, question, wontfix
+assignees: ''
+
+---
+---
+name: Jose
+about: This template define user story
+title: ''
+labels: backlog, bug, documentation, duplicate, enhancement, good first issue, help
+  wanted, icebox, question, wontfix
+assignees: ''
+
+---
+---
+name: Alberto
+about: This template define user story
+title: ''
+labels: backlog, bug, documentation, duplicate, enhancement, good first issue, help
+  wanted, icebox, question, wontfix
+assignees: ''
+
+---
+---
+name: Federeico
+about: This template define user story
+title: ''
+labels: backlog, bug, documentation, duplicate, enhancement, good first issue, help
+  wanted, icebox, question, wontfix
+assignees: ''
+
+---
+---
+name: Agustin
+about: This template define user story
+title: ''
+labels: backlog, bug, documentation, duplicate, enhancement, good first issue, help
+  wanted, icebox, question, wontfix
+assignees: ''
+
+---
+---
+name: Fernando
+about: This template define user story
+title: ''
+labels: backlog, bug, documentation, duplicate, enhancement, good first issue, help
+  wanted, icebox, question, wontfix
+assignees: ''
+
+---
+---
+name: Rodolfo
 about: This template define user story
 title: ''
 labels: backlog, bug, documentation, duplicate, enhancement, good first issue, help
