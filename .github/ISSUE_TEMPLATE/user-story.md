@@ -7,6 +7,9 @@ labels: backlog, bug, documentation, duplicate, enhancement, good first issue, h
 assignees: ''
 
 ---
+**As a** [role]
+**I need** [function]
+**So that** [benefit]
 ---
 name: Jose
 about: This template define user story
@@ -16,6 +19,9 @@ labels: backlog, bug, documentation, duplicate, enhancement, good first issue, h
 assignees: ''
 
 ---
+**As a** [role]
+**I need** [function]
+**So that** [benefit]
 ---
 name: Alberto
 about: This template define user story
@@ -25,6 +31,9 @@ labels: backlog, bug, documentation, duplicate, enhancement, good first issue, h
 assignees: ''
 
 ---
+**As a** [role]
+**I need** [function]
+**So that** [benefit]
 ---
 name: Federeico
 about: This template define user story
@@ -34,6 +43,9 @@ labels: backlog, bug, documentation, duplicate, enhancement, good first issue, h
 assignees: ''
 
 ---
+**As a** [role]
+**I need** [function]
+**So that** [benefit]
 ---
 name: Agustin
 about: This template define user story
@@ -43,6 +55,9 @@ labels: backlog, bug, documentation, duplicate, enhancement, good first issue, h
 assignees: ''
 
 ---
+**As a** [role]
+**I need** [function]
+**So that** [benefit]
 ---
 name: Fernando
 about: This template define user story
@@ -52,6 +67,9 @@ labels: backlog, bug, documentation, duplicate, enhancement, good first issue, h
 assignees: ''
 
 ---
+**As a** [role]
+**I need** [function]
+**So that** [benefit]
 ---
 name: Rodolfo
 about: This template define user story
