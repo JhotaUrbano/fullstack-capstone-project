@@ -6,7 +6,7 @@ labels: backlog, bug, documentation, duplicate, enhancement, good first issue, h
   wanted, icebox, question, wontfix
 assignees: ''
 
-name: Manolo
+name: Fernando
 about: This template define user story
 title: ''
 labels: backlog, bug, documentation, duplicate, enhancement, good first issue, help
