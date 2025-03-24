@@ -6,14 +6,14 @@ labels: backlog, bug, documentation, duplicate, enhancement, good first issue, h
   wanted, icebox, question, wontfix
 assignees: ''
 
-name: Fernando
-about: This template define user story
-title: ''
-labels: backlog, bug, documentation, duplicate, enhancement, good first issue, help
+name2: Manolo
+about2: This template define user story
+title2: ''
+labels2: backlog, bug, documentation, duplicate, enhancement, good first issue, help
   wanted, icebox, question, wontfix
-assignees: ''
-
+assignees2: ''
 ---
+
 
 **As a** [role]
 **I need** [function]
